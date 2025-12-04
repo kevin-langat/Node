@@ -9,3 +9,11 @@ try {
 } catch (error) {
   console.log('Something is wrong:', error.message);
 }
+
+// // Module wrapper
+// (
+//   function (exports, require, module, __filename, __dirname) {
+//     // 
+    
+//   }
+// )
