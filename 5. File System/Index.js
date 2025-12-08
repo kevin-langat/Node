@@ -27,7 +27,6 @@ console.log(
 );
 
 // aync way of creating a file
-
 const asyncPath = path.join(dataFolder, 'async.txt');
 
 fs.writeFile(asyncPath, 'hello async node js', (err) => {
