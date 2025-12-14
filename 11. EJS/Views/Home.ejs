@@ -1,0 +1,9 @@
+<%- include('components/Header.ejs') %>
+
+<h1>Welcome to my home page</h1>
+<label>List Of products</label>
+<ul>
+  <% products.map(product=>{ %>
+  <li><%= product.title %></li>
+  <% }) %>
+</ul>
