@@ -47,7 +47,7 @@ app.use((req, res, next) => {
       logger.warn(`Rate limit reached for ip ${req.ip}`);
       res.status(429).json({
         success: false,
-        message: `Too many requests`,
+        message: 'Too many requests',
       });
     });
 });
