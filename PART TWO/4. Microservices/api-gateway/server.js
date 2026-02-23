@@ -8,6 +8,7 @@ const { rateLimit } = require('express-rate-limit');
 const logger = require('./utils/logger');
 const proxy = require('express-http-proxy');
 const errorHandler = require('./utils/error-handler');
+const { validateToken } = require('./middleware/auth-middleware');
 const app = express();
 const PORT = process.env.PORT;
 
@@ -22,7 +23,7 @@ const rateLimiter = rateLimit({
   standardHeaders: true,
   legacyHeaders: false,
   handler: (req, res) => {
-    logger.warn(`Sensitive endpoint rate limit exceeded 530 for ip ${req.ip}`);
+    logger.warn(`Sensitive endpoint rate limit exceeded for ip ${req.ip}`);
 
     res.status(429).json({
       success: false,
@@ -62,6 +63,35 @@ app.use(
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
       logger.info(
         `Response received from identity service: ${proxyRes.statusCode}`,
+      );
+
+      return proxyResData;
+    },
+  }),
+);
+// setting up the proxy for posts services
+app.use(
+  '/v1/posts',
+  validateToken,
+  proxy(process.env.POST_SERVICE_URL, {
+    proxyReqPathResolver: (req) => {
+      return req.originalUrl.replace(/^\/v1/, '/api');
+    },
+    proxyErrorHandler: (err, res, next) => {
+      logger.error(`Proxy error: ${err.message}`);
+
+      res.status(500).json({
+        message: `Internal server error ${err.message}`,
+      });
+    },
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers['Content-Type'] = 'application/json';
+      proxyReqOpts.headers['x-user-id'] = srcReq.user.userId;
+      return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from post service: ${proxyRes.statusCode}`,
       );
 
       return proxyResData;

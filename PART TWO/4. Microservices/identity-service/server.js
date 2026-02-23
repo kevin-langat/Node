@@ -1,4 +1,5 @@
 require('dotenv').config();
+const dns = require('dns');
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -12,6 +13,7 @@ const { RedisStore } = require('rate-limit-redis');
 const errorHandler = require('./middleware/errorHandler');
 const routes = require('./routes/identity-routes');
 
+dns.setServers(['8.8.8.8', '1.1.1.1']);
 // connect to mongo db
 connectToDb();
 
@@ -35,7 +37,7 @@ app.use((req, res, next) => {
 const rateLimiter = new RateLimiterRedis({
   storeClient: redisClient,
   keyPrefix: 'middleware',
-  points: 10,
+  points: 30,
   duration: 1,
 });
 
@@ -53,7 +55,7 @@ app.use((req, res, next) => {
 });
 
 const sensitiveEndPointLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
+  windowMs: 30 * 60 * 1000,
   limit: 50,
   standardHeaders: true,
   legacyHeaders: false,
@@ -70,7 +72,7 @@ const sensitiveEndPointLimiter = rateLimit({
   }),
 });
 // apply the rate limiter on this endpoint
-app.use('/api/auth/register', sensitiveEndPointLimiter);
+app.use('/api/auth/register-user', sensitiveEndPointLimiter);
 
 app.use('/api/auth', routes);
 

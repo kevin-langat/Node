@@ -54,7 +54,7 @@ async function registerUser(req, res) {
     res.status(400).json({
       success: false,
       message: 'Some error occurred',
-      error,
+      error: error.message,
     });
   }
 }
@@ -71,6 +71,7 @@ async function loginUser(req, res) {
       });
     }
     const { error } = validateLogin(req.body);
+    console.log(email, password);
     if (error) {
       logger.warn('Validation error', error.details[0].message);
       return res.status(400).json({
@@ -79,6 +80,7 @@ async function loginUser(req, res) {
       });
     }
     const user = await User.findOne({ email });
+
     if (!user) {
       logger.warn('User does not exist');
       return res.status(404).json({
@@ -108,7 +110,7 @@ async function loginUser(req, res) {
     res.status(400).json({
       success: false,
       message: 'Some error occurred',
-      error,
+      error: error.message,
     });
   }
 }
