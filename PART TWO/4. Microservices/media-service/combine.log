@@ -1,0 +1,131 @@
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:11:25.419Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:11:38.586Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:11:44.858Z"}
+{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.managercluster.jms1hbd.mongodb.net","level":"error","message":"Some error occurred while connecting to Mongo db querySrv ECONNREFUSED _mongodb._tcp.managercluster.jms1hbd.mongodb.net","service":"media-service","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.managercluster.jms1hbd.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17)","syscall":"querySrv","timestamp":"2026-02-24T19:11:44.874Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:12:17.855Z"}
+{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.managercluster.jms1hbd.mongodb.net","level":"error","message":"Some error occurred while connecting to Mongo db querySrv ECONNREFUSED _mongodb._tcp.managercluster.jms1hbd.mongodb.net","service":"media-service","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.managercluster.jms1hbd.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17)","syscall":"querySrv","timestamp":"2026-02-24T19:12:17.867Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:12:53.938Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:12:56.733Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:13:07.323Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:13:09.072Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:13:18.672Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:13:20.638Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:13:42.319Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:13:44.285Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:13:45.196Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:13:46.984Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:13:48.646Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:13:49.913Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:13:54.811Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:13:58.673Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:25:35.326Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:25:36.856Z"}
+{"level":"error","message":"BadRequestError: request aborted\n    at IncomingMessage.onAborted (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\raw-body\\index.js:245:10)\n    at IncomingMessage.emit (node:events:519:28)\n    at IncomingMessage._destroy (node:_http_incoming:221:10)\n    at _destroy (node:internal/streams/destroy:122:10)\n    at IncomingMessage.destroy (node:internal/streams/destroy:84:5)\n    at abortIncoming (node:_http_server:838:9)\n    at socketOnClose (node:_http_server:832:3)\n    at Socket.emit (node:events:531:35)\n    at TCP.<anonymous> (node:net:346:12)","service":"media-service","timestamp":"2026-02-24T19:27:26.329Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:27:47.898Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:27:51.006Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:28:05.836Z"}
+{"level":"info","message":"Request body [object Object]","service":"media-service","timestamp":"2026-02-24T19:28:05.836Z"}
+{"level":"warn","message":"Access attempted without user Id","service":"media-service","timestamp":"2026-02-24T19:28:05.837Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:28:35.757Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:28:37.244Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:28:38.953Z"}
+{"level":"info","message":"Request body [object Object]","service":"media-service","timestamp":"2026-02-24T19:28:38.953Z"}
+{"level":"error","message":"TypeError: Right-hand side of 'instanceof' is not an object\n    at C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\routes\\media-routes.js:17:13\n    at multerMiddleware (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\multer\\lib\\make-middleware.js:19:41)\n    at C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\routes\\media-routes.js:16:3\n    at Layer.handleRequest (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\router\\index.js:582:12)","service":"media-service","timestamp":"2026-02-24T19:28:38.956Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:28:56.913Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:28:58.195Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:35:51.753Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:35:54.145Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:35:56.568Z"}
+{"level":"info","message":"Request body [object Object]","service":"media-service","timestamp":"2026-02-24T19:35:56.569Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:36:07.388Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:36:08.691Z"}
+{"level":"info","message":"Request body [object Object]","service":"media-service","timestamp":"2026-02-24T19:36:08.692Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:36:11.247Z"}
+{"level":"error","message":"BadRequestError: request aborted\n    at IncomingMessage.onAborted (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\raw-body\\index.js:245:10)\n    at IncomingMessage.emit (node:events:519:28)\n    at IncomingMessage._destroy (node:_http_incoming:221:10)\n    at _destroy (node:internal/streams/destroy:122:10)\n    at IncomingMessage.destroy (node:internal/streams/destroy:84:5)\n    at abortIncoming (node:_http_server:838:9)\n    at socketOnClose (node:_http_server:832:3)\n    at Socket.emit (node:events:531:35)\n    at TCP.<anonymous> (node:net:346:12)","service":"media-service","timestamp":"2026-02-24T19:37:04.805Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:37:35.220Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:37:38.895Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:37:51.787Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:37:53.552Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:39:07.726Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:39:09.305Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:39:19.461Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:39:20.649Z"}
+{"level":"error","message":"BadRequestError: request aborted\n    at IncomingMessage.onAborted (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\raw-body\\index.js:245:10)\n    at IncomingMessage.emit (node:events:519:28)\n    at IncomingMessage._destroy (node:_http_incoming:221:10)\n    at _destroy (node:internal/streams/destroy:122:10)\n    at IncomingMessage.destroy (node:internal/streams/destroy:84:5)\n    at abortIncoming (node:_http_server:838:9)\n    at socketOnClose (node:_http_server:832:3)\n    at Socket.emit (node:events:531:35)\n    at TCP.<anonymous> (node:net:346:12)","service":"media-service","timestamp":"2026-02-24T19:39:29.729Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:39:44.305Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:39:45.489Z"}
+{"level":"error","message":"BadRequestError: request aborted\n    at IncomingMessage.onAborted (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\raw-body\\index.js:245:10)\n    at IncomingMessage.emit (node:events:519:28)\n    at IncomingMessage._destroy (node:_http_incoming:221:10)\n    at _destroy (node:internal/streams/destroy:122:10)\n    at IncomingMessage.destroy (node:internal/streams/destroy:84:5)\n    at abortIncoming (node:_http_server:838:9)\n    at socketOnClose (node:_http_server:832:3)\n    at Socket.emit (node:events:531:35)\n    at TCP.<anonymous> (node:net:346:12)","service":"media-service","timestamp":"2026-02-24T19:40:01.280Z"}
+{"level":"info","message":"Received a GET request to /api/media","service":"media-service","timestamp":"2026-02-24T19:40:15.791Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T19:40:15.792Z"}
+{"level":"error","message":"BadRequestError: request aborted\n    at IncomingMessage.onAborted (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\raw-body\\index.js:245:10)\n    at IncomingMessage.emit (node:events:519:28)\n    at IncomingMessage._destroy (node:_http_incoming:221:10)\n    at _destroy (node:internal/streams/destroy:122:10)\n    at IncomingMessage.destroy (node:internal/streams/destroy:84:5)\n    at abortIncoming (node:_http_server:838:9)\n    at socketOnClose (node:_http_server:832:3)\n    at Socket.emit (node:events:531:35)\n    at TCP.<anonymous> (node:net:346:12)","service":"media-service","timestamp":"2026-02-24T19:41:40.938Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:44:57.213Z"}
+{"level":"info","message":"Received a POST request to /api/media","service":"media-service","timestamp":"2026-02-24T19:45:08.103Z"}
+{"level":"info","message":"Request body [object Object]","service":"media-service","timestamp":"2026-02-24T19:45:08.104Z"}
+{"beforeHandshake":false,"cause":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"connectionGeneration":0,"errorLabelSet":{},"level":"error","message":"Some error occurred while connecting to Mongo db read ECONNRESET","service":"media-service","stack":"MongoNetworkError: read ECONNRESET\n    at Connection.onSocketError (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\mongodb\\lib\\cmap\\connection.js:124:22)\n    at TLSSocket.emit (node:events:531:35)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2026-02-24T19:45:13.460Z"}
+{"level":"info","message":"Post service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:45:23.511Z"}
+{"address":"ac-wphkjzt-shard-00-02.jms1hbd.mongodb.net:27017","beforeHandshake":false,"cause":{"beforeHandshake":false,"errorLabelSet":{}},"errorLabelSet":{},"level":"error","message":"Some error occurred while connecting to Mongo db Connection pool for ac-wphkjzt-shard-00-02.jms1hbd.mongodb.net:27017 was cleared because another operation failed with: \"read ECONNRESET\"","service":"media-service","stack":"MongoPoolClearedError: Connection pool for ac-wphkjzt-shard-00-02.jms1hbd.mongodb.net:27017 was cleared because another operation failed with: \"read ECONNRESET\"\n    at C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:421:77\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2026-02-24T19:45:43.578Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:46:00.591Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:46:06.130Z"}
+{"level":"error","message":"BadRequestError: request aborted\n    at IncomingMessage.onAborted (C:\\Users\\ADMIN\\Desktop\\Node Sangam\\Node Concepts\\PART TWO\\4. Microservices\\media-service\\node_modules\\raw-body\\index.js:245:10)\n    at IncomingMessage.emit (node:events:519:28)\n    at IncomingMessage._destroy (node:_http_incoming:221:10)\n    at _destroy (node:internal/streams/destroy:122:10)\n    at IncomingMessage.destroy (node:internal/streams/destroy:84:5)\n    at abortIncoming (node:_http_server:838:9)\n    at socketOnClose (node:_http_server:832:3)\n    at Socket.emit (node:events:531:35)\n    at TCP.<anonymous> (node:net:346:12)","service":"media-service","timestamp":"2026-02-24T19:51:03.296Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:51:10.013Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:51:12.631Z"}
+{"level":"info","message":"Received a POST request to /api/media","service":"media-service","timestamp":"2026-02-24T19:51:44.541Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T19:51:44.541Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:52:38.204Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:52:39.661Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:52:42.855Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:52:43.988Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:52:49.327Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:52:50.501Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:53:17.937Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T19:53:17.937Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:53:32.177Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:53:36.645Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:53:39.786Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:53:44.842Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:55:27.172Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:55:32.436Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:55:34.966Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T19:55:34.966Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:56:46.741Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:56:50.616Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:56:51.880Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T19:56:51.880Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:57:10.596Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:57:12.120Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:57:15.686Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:57:17.510Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:57:24.916Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:57:26.169Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:57:28.098Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T19:57:28.099Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:57:54.345Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:57:55.661Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:58:21.529Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:58:23.916Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:58:29.432Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:58:30.700Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:59:20.260Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:59:21.617Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:59:23.371Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T19:59:23.372Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:59:31.654Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T19:59:31.655Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T19:59:33.276Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T19:59:33.276Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T19:59:48.279Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T19:59:52.446Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T20:00:16.623Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T20:00:18.595Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T20:01:12.426Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T20:01:13.860Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T20:01:23.760Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T20:01:23.761Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2026-02-24T20:01:23.766Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T20:01:45.632Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T20:01:49.376Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T20:01:49.377Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2026-02-24T20:01:49.380Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T20:01:49.779Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T20:01:53.238Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T20:01:53.238Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2026-02-24T20:01:53.240Z"}

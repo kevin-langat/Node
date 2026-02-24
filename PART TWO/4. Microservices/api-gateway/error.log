@@ -19,3 +19,13 @@
 {"level":"error","message":"Proxy error: socket hang up","service":"identity-service","timestamp":"2026-02-21T21:01:57.477Z"}
 {"level":"error","message":"Proxy error: socket hang up","service":"identity-service","timestamp":"2026-02-21T21:02:11.995Z"}
 {"level":"error","message":"Proxy error: socket hang up","service":"identity-service","timestamp":"2026-02-21T21:02:35.930Z"}
+{"level":"error","message":"Proxy error: socket hang up","service":"identity-service","timestamp":"2026-02-24T19:23:39.562Z"}
+{"level":"error","message":"Proxy error: socket hang up","service":"identity-service","timestamp":"2026-02-24T19:27:26.327Z"}
+{"level":"error","message":"Proxy error: socket hang up","service":"identity-service","timestamp":"2026-02-24T19:37:04.803Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"identity-service","timestamp":"2026-02-24T19:39:06.195Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"identity-service","timestamp":"2026-02-24T19:39:17.908Z"}
+{"level":"error","message":"Proxy error: socket hang up","service":"identity-service","timestamp":"2026-02-24T19:39:29.724Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"identity-service","timestamp":"2026-02-24T19:39:43.356Z"}
+{"level":"error","message":"Proxy error: socket hang up","service":"identity-service","timestamp":"2026-02-24T19:40:01.276Z"}
+{"level":"error","message":"Proxy error: socket hang up","service":"identity-service","timestamp":"2026-02-24T19:41:40.938Z"}
+{"level":"error","message":"Proxy error: socket hang up","service":"identity-service","timestamp":"2026-02-24T19:45:10.117Z"}

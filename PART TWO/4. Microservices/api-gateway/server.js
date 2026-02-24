@@ -99,6 +99,39 @@ app.use(
   }),
 );
 
+// setting up the proxy for posts services
+app.use(
+  '/v1/media',
+  validateToken,
+  proxy(process.env.MEDIA_SERVICE_URL, {
+    proxyReqPathResolver: (req) => {
+      return req.originalUrl.replace(/^\/v1/, '/api');
+    },
+    proxyErrorHandler: (err, res, next) => {
+      logger.error(`Proxy error: ${err.message}`);
+
+      res.status(500).json({
+        message: `Internal server error ${err.message}`,
+      });
+    },
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers['x-user-id'] = srcReq.user.userId;
+      if (!srcReq.headers['content-type'].startsWith('multipart/form-data')) {
+        proxyReqOpts.headers['Content-Type'] = 'application/json';
+      }
+      return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from post service: ${proxyRes.statusCode}`,
+      );
+
+      return proxyResData;
+    },
+    parseReqBody:false
+  }),
+);
+
 app.use(errorHandler);
 
 app.listen(PORT, () => {

@@ -147,7 +147,7 @@ async function deletePost(req, res) {
       message: 'Post deleted successfully',
     });
   } catch (error) {
-    logger.error('Some error occurred while 638deleting a post');
+    logger.error('Some error occurred while deleting a post');
     res.status(500).json({
       success: false,
       message: 'Some error occurred while deleting a post',
