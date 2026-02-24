@@ -129,3 +129,21 @@
 {"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T20:01:53.238Z"}
 {"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T20:01:53.238Z"}
 {"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2026-02-24T20:01:53.240Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T20:03:57.872Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T20:03:59.694Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T20:04:21.494Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T20:04:21.495Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2026-02-24T20:04:21.504Z"}
+{"level":"info","message":"file details: name-Photo.jpg, type:image/jpeg, ","service":"media-service","timestamp":"2026-02-24T20:04:21.505Z"}
+{"level":"info","message":"Upload to cloudinary successfull. publicId->agzh8b2tawxaxbiwi5j9, secureUrl->https://res.cloudinary.com/dwwaetdws/image/upload/v1771963465/agzh8b2tawxaxbiwi5j9.jpg","service":"media-service","timestamp":"2026-02-24T20:04:25.028Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T20:05:36.690Z"}
+{"level":"info","message":"Request body [object Object]","service":"media-service","timestamp":"2026-02-24T20:05:36.691Z"}
+{"level":"error","message":"No file found","service":"media-service","timestamp":"2026-02-24T20:05:36.692Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T20:05:39.326Z"}
+{"level":"info","message":"Request body [object Object]","service":"media-service","timestamp":"2026-02-24T20:05:39.326Z"}
+{"level":"error","message":"No file found","service":"media-service","timestamp":"2026-02-24T20:05:39.327Z"}
+{"level":"info","message":"Received a POST request to /api/media/upload","service":"media-service","timestamp":"2026-02-24T20:05:47.698Z"}
+{"level":"info","message":"Request body undefined","service":"media-service","timestamp":"2026-02-24T20:05:47.698Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2026-02-24T20:05:47.700Z"}
+{"level":"info","message":"file details: name-Photo.jpg, type:image/jpeg, ","service":"media-service","timestamp":"2026-02-24T20:05:47.701Z"}
+{"level":"info","message":"Upload to cloudinary successfull. publicId->xs0gsev13kpx77ibqrki, secureUrl->https://res.cloudinary.com/dwwaetdws/image/upload/v1771963550/xs0gsev13kpx77ibqrki.jpg","service":"media-service","timestamp":"2026-02-24T20:05:50.176Z"}
