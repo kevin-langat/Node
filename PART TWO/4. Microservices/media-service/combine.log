@@ -147,3 +147,5 @@
 {"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2026-02-24T20:05:47.700Z"}
 {"level":"info","message":"file details: name-Photo.jpg, type:image/jpeg, ","service":"media-service","timestamp":"2026-02-24T20:05:47.701Z"}
 {"level":"info","message":"Upload to cloudinary successfull. publicId->xs0gsev13kpx77ibqrki, secureUrl->https://res.cloudinary.com/dwwaetdws/image/upload/v1771963550/xs0gsev13kpx77ibqrki.jpg","service":"media-service","timestamp":"2026-02-24T20:05:50.176Z"}
+{"level":"info","message":"Media service running on port: 3003","service":"media-service","timestamp":"2026-02-24T22:31:34.716Z"}
+{"level":"info","message":"Connected to Mongo DB","service":"media-service","timestamp":"2026-02-24T22:31:37.199Z"}
