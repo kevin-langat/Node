@@ -737,3 +737,36 @@
 {"level":"info","message":"Received a POST request to /v1/media/upload","service":"identity-service","timestamp":"2026-02-24T20:05:47.695Z"}
 {"level":"info","message":"Request body undefined","service":"identity-service","timestamp":"2026-02-24T20:05:47.695Z"}
 {"level":"info","message":"Response received from post service: 201","service":"identity-service","timestamp":"2026-02-24T20:05:54.738Z"}
+{"level":"info","message":"Received a GET request to /v1/media/get-all-media","service":"identity-service","timestamp":"2026-02-25T21:27:17.121Z"}
+{"level":"info","message":"Request body undefined","service":"identity-service","timestamp":"2026-02-25T21:27:17.122Z"}
+{"level":"warn","message":"Invalid Token","service":"identity-service","timestamp":"2026-02-25T21:27:17.129Z"}
+{"level":"info","message":"Received a POST request to /v1/auth/login-user","service":"identity-service","timestamp":"2026-02-25T21:27:29.343Z"}
+{"level":"info","message":"Request body [object Object]","service":"identity-service","timestamp":"2026-02-25T21:27:29.344Z"}
+{"level":"info","message":"Response received from identity service: 200","service":"identity-service","timestamp":"2026-02-25T21:27:30.807Z"}
+{"level":"info","message":"Received a GET request to /v1/media/get-all-media","service":"identity-service","timestamp":"2026-02-25T21:27:52.487Z"}
+{"level":"info","message":"Request body undefined","service":"identity-service","timestamp":"2026-02-25T21:27:52.487Z"}
+{"level":"info","message":"Response received from post service: 201","service":"identity-service","timestamp":"2026-02-25T21:27:53.602Z"}
+{"level":"info","message":"API gateway started port 3000","service":"identity-service","timestamp":"2026-02-26T19:24:37.119Z"}
+{"level":"info","message":"Identity service started on port http://localhost:3001","service":"identity-service","timestamp":"2026-02-26T19:24:37.127Z"}
+{"level":"info","message":"Redis url: redis://localhost:6379","service":"identity-service","timestamp":"2026-02-26T19:24:37.128Z"}
+{"level":"info","message":"Received a GET request to /v1/media/get-all-media","service":"identity-service","timestamp":"2026-02-26T19:31:37.169Z"}
+{"level":"info","message":"Request body undefined","service":"identity-service","timestamp":"2026-02-26T19:31:37.170Z"}
+{"level":"warn","message":"Access attempt without valid token!","service":"identity-service","timestamp":"2026-02-26T19:31:37.172Z"}
+{"level":"info","message":"Received a POST request to /v1/auth/login-user","service":"identity-service","timestamp":"2026-02-26T19:31:46.247Z"}
+{"level":"info","message":"Request body [object Object]","service":"identity-service","timestamp":"2026-02-26T19:31:46.248Z"}
+{"level":"info","message":"Response received from identity service: 200","service":"identity-service","timestamp":"2026-02-26T19:31:46.910Z"}
+{"level":"info","message":"Received a GET request to /v1/media/get-all-media","service":"identity-service","timestamp":"2026-02-26T19:32:09.588Z"}
+{"level":"info","message":"Request body undefined","service":"identity-service","timestamp":"2026-02-26T19:32:09.589Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"identity-service","timestamp":"2026-02-26T19:32:09.599Z"}
+{"level":"info","message":"Received a GET request to /v1/media/get-all-media","service":"identity-service","timestamp":"2026-02-26T19:32:39.377Z"}
+{"level":"info","message":"Request body undefined","service":"identity-service","timestamp":"2026-02-26T19:32:39.378Z"}
+{"level":"info","message":"Response received from post service: 200","service":"identity-service","timestamp":"2026-02-26T19:32:39.673Z"}
+{"level":"info","message":"Received a POST request to /v1/media/upload","service":"identity-service","timestamp":"2026-02-26T19:34:19.731Z"}
+{"level":"info","message":"Request body undefined","service":"identity-service","timestamp":"2026-02-26T19:34:19.732Z"}
+{"level":"info","message":"Response received from post service: 201","service":"identity-service","timestamp":"2026-02-26T19:34:26.985Z"}
+{"level":"info","message":"Received a GET request to /v1/media/get-all-media","service":"identity-service","timestamp":"2026-02-26T19:34:34.887Z"}
+{"level":"info","message":"Request body undefined","service":"identity-service","timestamp":"2026-02-26T19:34:34.888Z"}
+{"level":"info","message":"Response received from post service: 200","service":"identity-service","timestamp":"2026-02-26T19:34:35.162Z"}
+{"level":"info","message":"API gateway started port 3000","service":"identity-service","timestamp":"2026-02-26T19:41:02.897Z"}
+{"level":"info","message":"Identity service started on port http://localhost:3001","service":"identity-service","timestamp":"2026-02-26T19:41:02.904Z"}
+{"level":"info","message":"Redis url: redis://localhost:6379","service":"identity-service","timestamp":"2026-02-26T19:41:02.905Z"}

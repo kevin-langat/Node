@@ -7,6 +7,8 @@ const mediaRoutes = require('./routes/media-routes');
 const errorHandler = require('./middleware/error-handler');
 const logger = require('./utils/logger');
 const dns = require('dns');
+const { connectToRabbitMQ, consumeEvent } = require('./utils/rabbitmq');
+const { handlePostDeleted } = require('./handlers/media-event-handlers');
 const app = express();
 
 dns.setServers(['8.8.8.8', '1.1.1.1']);
@@ -33,6 +35,16 @@ app.use((req, res, next) => {
 
 app.use('/api/media', mediaRoutes);
 app.use(errorHandler);
+
+(async function startServer() {
+  try {
+    await connectToRabbitMQ();
+    await consumeEvent('post.deleted', handlePostDeleted);
+  } catch (error) {
+    logger.error(`Some error occurred while connecting to RabbitMQ: ${PORT}`);
+    process.exit(1);
+  }
+})();
 
 app.listen(process.env.PORT, () => {
   logger.info(`Media service running on port: ${process.env.PORT}`);
