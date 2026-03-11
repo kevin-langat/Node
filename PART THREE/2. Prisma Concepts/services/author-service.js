@@ -6,7 +6,7 @@ const adapter = new PrismaPg({
 });
 const prisma = new PrismaClient({ adapter });
 
-async function addAuthor(name) {
+async function createNewAuthor(name) {
   try {
     const newlyCreateAuthor = await prisma.author.create({
       data: {
@@ -16,7 +16,8 @@ async function addAuthor(name) {
 
     return newlyCreateAuthor;
   } catch (err) {
-    console.log(err);
+    console.log(err.message);
+    return err;
   }
 }
-module.exports = { addAuthor };
+module.exports = { createNewAuthor };
