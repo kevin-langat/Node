@@ -20,4 +20,18 @@ async function createNewAuthor(name) {
     return err;
   }
 }
-module.exports = { createNewAuthor };
+
+async function deleteAuthor(id) {
+  try {
+    const deletedAuthor = await prisma.author.delete({
+      where: { id },
+      include: { books: true },
+    });
+
+    return deletedAuthor;
+  } catch (error) {
+    console.log(err.message);
+    return err;
+  }
+}
+module.exports = { createNewAuthor, deleteAuthor };
