@@ -12,6 +12,8 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
 
   app:
    build: .
@@ -20,18 +22,22 @@ services:
     - database
    environment:
     - DATABASE_URL=postgresql://postgres:K42173008k@database:5432/prisma-basics?schema=public
+    - PORT=5000
    ports:
    - "5000:5000"
    volumes:
     - .:/usr/src/app
     - /usr/src/app/node_modules
    command: ["sh", "-c", "npx prisma generate && node server.js"]
+   networks:
+     - app-network
   prometheus:
     image: prom/prometheus:latest
-    container_name: prometheus
+    container_name: prometheus_container
     restart: unless-stopped
     ports:
       - "9090:9090"
+    
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus_data:/prometheus
@@ -39,9 +45,32 @@ services:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'
     networks:
-      - monitoring
- 
+      - app-network
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: grafana_container
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - prometheus
+    networks:
+      - app-network
+
 volumes:
- postgres_data:
+  prometheus_data:
+  postgres_data:
+  grafana_data:
+
+networks:
+  app-network:
+    driver: bridge
+
 
 
