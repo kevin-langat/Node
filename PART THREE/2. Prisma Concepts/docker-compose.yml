@@ -1,0 +1,47 @@
+
+services:
+  database:
+    image: postgres:17
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: K42173008k
+      POSTGRES_DB: prisma-basics
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+   build: .
+   container_name: express_api
+   depends_on:
+    - database
+   environment:
+    - DATABASE_URL=postgresql://postgres:K42173008k@database:5432/prisma-basics?schema=public
+   ports:
+   - "5000:5000"
+   volumes:
+    - .:/usr/src/app
+    - /usr/src/app/node_modules
+   command: ["sh", "-c", "npx prisma generate && node server.js"]
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    networks:
+      - monitoring
+ 
+volumes:
+ postgres_data:
+
+

@@ -2,10 +2,11 @@
   "name": "2.-prisma-concepts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "start": "npx prisma generate && nodemon server.js",
+    "dev": "npx prisma generate && nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
     "pg": "^8.20.0",
-    "prisma": "^7.4.2"
+    "prisma": "^7.4.2",
+    "prom-client": "^15.1.3"
   }
 }
