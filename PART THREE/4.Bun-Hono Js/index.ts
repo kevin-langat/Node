@@ -3,5 +3,6 @@
 // import './fs/meta-envs'
 // import './fs/fetch'
 // import './fs/server'
-import './fs/hashing'
+// import './fs/hashing'
+import './fs/sqlite.ts'
 
